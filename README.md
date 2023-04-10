@@ -43,7 +43,6 @@ The list of available services are:
 
 ## MariaDB Service
 
-To use the `mariadb` service, start the service and use `root` as the user. The password is set in the `.env` file as `MARIADB_ROOT_PASSWORD`.
 The default database access settings are:
 
 ```
