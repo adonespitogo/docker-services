@@ -3,7 +3,7 @@
 Docker container for common system services like databases.
 
 I work on multiple enviroments like Mac OS and a variaty of linux operating systems. One common services I need to install are databases for our
-applications such as our [AdoPiSoft] application and servers(https://wwww.adopisoft.com). Docker has made it so much easier to setup all these services with
+applications such as our [AdoPiSoft](https://wwww.adopisoft.com) application and servers. Docker has made it so much easier to setup all these services with
 a single configuration repository.
 
 ## System Requirements
