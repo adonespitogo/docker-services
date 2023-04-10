@@ -8,6 +8,7 @@ a single configuration repository.
 
 ## System Requirements
 
+- `docker`
 - `make`
 
 ## Usage
