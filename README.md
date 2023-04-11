@@ -1,6 +1,6 @@
 # docker-services
 
-Docker container for common system services like databases.
+Docker containers for common system services like databases.
 
 I work on multiple enviroments like Mac OS and a variaty of linux operating systems. One common services I need to install in my local development machine are databases for our
 applications such as our [AdoPiSoft](https://wwww.adopisoft.com) application and servers. Docker has made it so much easier to setup all these services with
