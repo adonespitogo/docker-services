@@ -21,27 +21,9 @@ cp .env.sample .env
 
 Setup your environment variables by copying `.env.sample` to `.env` and modify the values in `.env` to suite your needs.
 
-
-## Starting Services
-
-To start any service, use `make start_` + name of the service command. For example, to start `mariadb` server:
-
-```
-make start_mariadb
-```
-
-To stop `mariadb` server:
-
-```
-make stop_mariadb
-```
-
-The list of available services are:
-
-- `mariadb`
-- `postgres`
-
 ## MariaDB Service
+
+To start `mariadb` server, type: `make start_mariadb`. To stop, use `make stop_mariadb`.
 
 The default database access settings are:
 
@@ -53,6 +35,8 @@ port      = 3306
 ```
 
 ## Postgres Service
+
+To start `postgres` server, type: `make start_postgres`. To stop, use `make stop_postgres`.
 
 The default database access settings are:
 
