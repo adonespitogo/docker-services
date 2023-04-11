@@ -25,7 +25,7 @@ Setup your environment variables by copying `.env.sample` to `.env` and modify t
 
 To start `mariadb` server, type: `make start_mariadb`. To stop, use `make stop_mariadb`.
 
-The default database access settings are:
+The default connection settings are:
 
 ```
 host      = localhost
@@ -38,7 +38,7 @@ port      = 3306
 
 To start `postgres` server, type: `make start_postgres`. To stop, use `make stop_postgres`.
 
-The default database access settings are:
+The default connection settings are:
 
 ```
 host      = localhost
