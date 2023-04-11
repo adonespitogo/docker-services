@@ -39,7 +39,7 @@ make stop_mariadb
 The list of available services are:
 
 - `mariadb`
-- `postgresql`
+- `postgres`
 
 ## MariaDB Service
 
@@ -52,4 +52,14 @@ password  = rootpass
 port      = 3306
 ```
 
+## Postgres Service
+
+The default database access settings are:
+
+```
+host      = localhost
+username  = postgres
+password  = postgrespass
+port      = 5432
+```
 
