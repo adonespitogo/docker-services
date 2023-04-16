@@ -33,6 +33,8 @@ password  = rootpass
 port      = 3306
 ```
 
+PhpMyAdmin is automatically started and can be accessed via [http://localhost:8080](http://localhost:8080) by default.
+
 ## Postgres Service
 
 To start `postgres` server, type: `make start_postgres`. To stop, use `make stop_postgres`.
