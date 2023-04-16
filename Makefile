@@ -18,7 +18,10 @@ start_phpmyadmin:
 
 # Postgres
 start_postgres:
-	docker run --rm -d --name $(PG_CONTAINER) -p $(PG_PORT):5432 -e POSTGRES_PASSWORD=$(PG_PASSWORD) postgres:latest
+	docker run --rm -d --name $(PG_CONTAINER) -p $(PG_PORT):5432 -e POSTGRES_PASSWORD=$(PG_PASSWORD) \
+		-e PGDATA=/var/lib/postgresql/data/pgdata \
+		-v ./postgres-data:/var/lib/postgresql/data \
+		postgres:latest
 
 stop_postgres:
 	docker stop $(PG_CONTAINER)
