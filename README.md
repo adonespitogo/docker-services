@@ -51,7 +51,7 @@ The default settings for `pgadmin4` are:
 Access: [http://localhost:8081](http://localhost:8081)
 
 ```
-email       = admin@pgadmin4.local
+email       = admin@pgadmin4
 password    = pgadmin4
 ```
 
