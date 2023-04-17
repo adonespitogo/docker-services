@@ -26,3 +26,5 @@ start_postgres:
 stop_postgres:
 	docker stop $(PG_CONTAINER)
 
+status:
+	docker container ls

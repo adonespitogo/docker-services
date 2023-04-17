@@ -20,7 +20,7 @@ cp .env.sample .env
 
 Setup your environment variables by copying `.env.sample` to `.env` and modify the values in `.env` to suite your needs.
 
-## MariaDB Service
+### MariaDB Service
 
 To start `mariadb` server, type: `make start_mariadb`. To stop, use `make stop_mariadb`.
 
@@ -35,7 +35,7 @@ port      = 3306
 
 PhpMyAdmin is automatically started and can be accessed via [http://localhost:8080](http://localhost:8080) by default.
 
-## Postgres Service
+### Postgres Service
 
 To start `postgres` server, type: `make start_postgres`. To stop, use `make stop_postgres`.
 
@@ -48,3 +48,10 @@ password  = postgrespass
 port      = 5432
 ```
 
+## Docker Status
+
+To list all running docker containers:
+
+```
+make status
+```
