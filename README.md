@@ -42,6 +42,7 @@ PhpMyAdmin is automatically started and can be accessed via [http://localhost:80
 Copy the [servers.json.sample](./pgadmin4/servers.json.sample) file to `pgadmin4/servers.json` and configure it to match your postgres container settings:
 
 ```
+mkdir -p ./pgadmin4/config
 cp ./pgadmin4/servers.json.sample ./pgadmin4/config/servers.json
 ```
 
