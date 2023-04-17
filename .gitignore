@@ -1,3 +1,5 @@
 .env
-/mysql-data/*
-/postgres-data/*
+/mysql-data
+/postgres-data
+/pgadmin4/config
+/pgadmin4/var
