@@ -37,6 +37,26 @@ PhpMyAdmin is automatically started and can be accessed via [http://localhost:80
 
 ### Postgres Service
 
+**Configuring Pgadmin4**
+
+Copy the [servers.json.sample](./pgadmin4/servers.json.sample) file to `pgadmin4/servers.json` and configure it to match your postgres container settings:
+
+```
+mkdir -p ./pgadmin4/config
+cp ./pgadmin4/servers.json.sample ./pgadmin4/config/servers.json
+```
+
+The default settings for `pgadmin4` are:
+
+Access: [http://localhost:8081](http://localhost:8081)
+
+```
+email       = admin@pgadmin4
+password    = pgadmin4
+```
+
+The `pgadmin4` container is started automatically when you start the postgres container using `make start_postgres` and is stopped automatically when you stop the postgres container via `make stop_postgres`.
+
 To start `postgres` server, type: `make start_postgres`. To stop, use `make stop_postgres`.
 
 The default connection settings are:
@@ -44,7 +64,7 @@ The default connection settings are:
 ```
 host      = localhost
 username  = postgres
-password  = postgrespass
+password  = postgres
 port      = 5432
 ```
 
@@ -55,3 +75,4 @@ To list all running docker containers:
 ```
 make status
 ```
+
