@@ -16,6 +16,7 @@ applications such as our [AdoPiSoft](https://wwww.adopisoft.com) application and
 git clone git@github.com:adonespitogo/docker-services.git ~/docker-services
 cd ~/docker-services
 cp .env.sample .env
+source .env
 ```
 
 Setup your environment variables by copying `.env.sample` to `.env` and modify the values in `.env` to suite your needs.
