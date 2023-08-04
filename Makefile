@@ -14,8 +14,6 @@ stop_mariadb:
 	docker stop $(MARIADB_CONTAINER)
 	docker stop $(PHPMYADMIN_CONTAINER)
 
-start_phpmyadmin:
-
 # Postgres
 start_postgres:
 	docker run --rm -d --name $(PG_CONTAINER) -p $(PG_PORT):5432 -e POSTGRES_PASSWORD=$(PG_PASSWORD) \
