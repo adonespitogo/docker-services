@@ -60,15 +60,9 @@ Email: admin@domain.com
 Password: admin
 ```
 
-Then register the database server. Right click `Server` then select `Register > Server`. In the `Connection` tab, enter:
+Then select the pre-defined server `Servers > Local Server`. When a prompt appears to enter your password, type: `postgrespass`
 
-```
-Hostname/address: pg-server
-Port: 5432
-Maintenance database: postgres
-Username: postgres
-Password: postgrespass
-```
+This will automatically connect you to the running docker postgres server.
 
 ## Docker Status
 
