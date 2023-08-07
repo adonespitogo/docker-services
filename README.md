@@ -34,6 +34,8 @@ password  = rootpass
 port      = 3306
 ```
 
+To access `PhpMyAdmin`, visit: https://localhost:8080
+
 PhpMyAdmin is automatically started and can be accessed via [http://localhost:8080](http://localhost:8080) by default.
 
 ### Postgres Service
@@ -47,6 +49,25 @@ host      = localhost
 username  = postgres
 password  = postgrespass
 port      = 5432
+```
+
+To access `pgadmin4`, visit https://localhost:8081
+
+The default email/password for pgadmin4 is:
+
+```
+Email: admin@domain.com
+Password: admin
+```
+
+Then register the database server. Right click `Server` then select `Register > Server`. In the `Connection` tab, enter:
+
+```
+Hostname/address: pg-server
+Port: 5432
+Maintenance database: postgres
+Username: postgres
+Password: postgrespass
 ```
 
 ## Docker Status
