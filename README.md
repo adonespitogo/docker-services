@@ -47,7 +47,7 @@ The default connection settings are:
 ```
 host      = localhost
 username  = postgres
-password  = postgrespass
+password  = postgres
 port      = 5432
 ```
 
@@ -60,7 +60,7 @@ Email: admin@domain.com
 Password: admin
 ```
 
-Then select the pre-defined server `Servers > Local Server`. When a prompt appears to enter your password, type: `postgrespass`
+Then select the pre-defined server `Servers > Local Server`. When a prompt appears to enter your password, type: `postgres`
 
 This will automatically connect you to the running docker postgres server.
 
