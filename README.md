@@ -18,8 +18,7 @@ cd ~/docker-services
 cp .env.sample .env
 ```
 
-Setup your environment variables by copying `.env.sample` to `.env` and modify the values in `.env` to suite your needs.
-These variables are automatically included when you execute any make commands.
+Setup your environment variables by copying `.env.sample` to `.env`
 
 ### MariaDB Service
 
@@ -49,7 +48,7 @@ password  = postgres
 port      = 5432
 ```
 
-To access `pgadmin4`, visit https://localhost:8081
+To manage your postgres server using `pgadmin4` visit https://localhost:8081
 
 The default email/password for pgadmin4 is:
 
