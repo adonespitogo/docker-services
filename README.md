@@ -18,7 +18,7 @@ cd ~/docker-services
 cp .env.sample .env
 ```
 
-Setup your environment variables by copying `.env.sample` to `.env`
+The instructions below assumes you are using the default values in `.env` file.
 
 ### MariaDB Service
 
