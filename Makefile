@@ -5,7 +5,7 @@ export
 start_mariadb:
 	docker run --rm -d --name $(MARIADB_CONTAINER) -p $(MARIADB_PORT):3306 \
 		-e MARIADB_ROOT_PASSWORD=$(MARIADB_ROOT_PASSWORD) \
-		-v $(CWD)/mysql-data:/var/lib/mysql \
+		-v mysqldata:/var/lib/mysql \
 		mariadb:latest
 	docker run --rm -d --name $(PHPMYADMIN_CONTAINER) -p $(PHPMYADMIN_PORT):80 --link $(MARIADB_CONTAINER):db \
 		-e MYSQL_ROOT_PASSWORD=$(MARIADB_ROOT_PASSWORD) \
@@ -24,11 +24,10 @@ start_postgres:
 		-e POSTGRES_PASSWORD=$(PG_PASSWORD) \
 		-e POSTGRES_HOST_AUTH_METHOD=$(PG_AUTH_METHOD) \
 		-e PGDATA=/var/lib/postgresql/data/pgdata \
-		-v $(CWD)/postgres-data:/var/lib/postgresql/data \
+		-v pgdata:/var/lib/postgresql/data \
 		postgres:latest
 	mkdir -p ./pgadmin4/var/lib/pgadmin && \
 	sudo chown 5050 ./pgadmin4/servers.json && \
-	sudo chown -R 5050 ./pgadmin4/var/lib && \
 		docker run --rm -d --name $(PGADMIN_CONTAINER) -p $(PGADMIN_PORT):$(PGADMIN_PORT) --link $(PG_CONTAINER):pg-server \
 		-e 'PGADMIN_LISTEN_PORT=$(PGADMIN_PORT)' \
 		-e 'PGADMIN_DEFAULT_EMAIL=$(PGADMIN_EMAIL)' \
@@ -36,7 +35,7 @@ start_postgres:
     -e 'PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION=True' \
     -e 'PGADMIN_CONFIG_LOGIN_BANNER="Authorised users only!"' \
     -e 'PGADMIN_CONFIG_CONSOLE_LOG_LEVEL=10' \
-		-v '$(CWD)/pgadmin4/var/lib/pgadmin:/var/lib/pgadmin' \
+		-v 'pgadmin4data:/var/lib/pgadmin' \
 		-v '$(CWD)/pgadmin4/servers.json:/pgadmin4/servers.json' \
     dpage/pgadmin4
 
