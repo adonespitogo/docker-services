@@ -36,7 +36,7 @@ port      = 3306
 
 To access `PhpMyAdmin`, visit: https://localhost:8080
 
-PhpMyAdmin is automatically started and can be accessed via [http://localhost:8080](http://localhost:8080) by default.
+`PhpMyAdmin` is automatically started and can be accessed via [http://localhost:8080](http://localhost:8080) by default.
 
 ### Postgres Service
 
