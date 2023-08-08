@@ -60,7 +60,7 @@ Email: admin@domain.com
 Password: admin
 ```
 
-Then select the pre-defined server `Servers > Local Server`. When a prompt appears to enter your password, type: `postgres`
+Then select the pre-defined server `Servers > Local Server`. When a prompt appears to enter your postgres user password, type: `postgres`
 
 This will automatically connect you to the running docker postgres server.
 
