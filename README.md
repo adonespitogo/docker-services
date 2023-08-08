@@ -20,6 +20,8 @@ cp .env.sample .env
 
 The instructions below assumes you are using the default values in `.env` file.
 
+---
+
 ### MariaDB Service
 
 To start `mariadb` server, type: `make start_mariadb`. To stop, use `make stop_mariadb`.
@@ -34,6 +36,8 @@ port      = 3306
 ```
 
 `PhpMyAdmin` is automatically started and can be accessed via [http://localhost:8080](http://localhost:8080) by default.
+
+---
 
 ### Postgres Service
 
@@ -61,10 +65,12 @@ Then select the pre-defined server `Servers > Local Server`. When a prompt appea
 
 This will automatically connect you to the running docker postgres server.
 
+---
+
 ## Docker Status
 
 To list all running docker containers:
 
 ```
-make status
+make status # alis for docker container list
 ```
