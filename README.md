@@ -52,7 +52,7 @@ password  = postgres
 port      = 5432
 ```
 
-To manage your postgres server using `pgadmin4` visit https://localhost:8081
+To manage your postgres server using `pgadmin4` visit http://localhost:8081
 
 The default email/password for pgadmin4 is:
 
