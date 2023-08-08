@@ -26,7 +26,6 @@ start_postgres:
 		-e PGDATA=/var/lib/postgresql/data/pgdata \
 		-v pgdata:/var/lib/postgresql/data \
 		postgres:latest
-	mkdir -p ./pgadmin4/var/lib/pgadmin && \
 	sudo chown 5050 ./pgadmin4/servers.json && \
 		docker run --rm -d --name $(PGADMIN_CONTAINER) -p $(PGADMIN_PORT):$(PGADMIN_PORT) --link $(PG_CONTAINER):pg-server \
 		-e 'PGADMIN_LISTEN_PORT=$(PGADMIN_PORT)' \
