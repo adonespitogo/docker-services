@@ -18,8 +18,9 @@ cd ~/docker-services
 cp .env.sample .env
 ```
 
-Setup your environment variables by copying `.env.sample` to `.env` and modify the values in `.env` to suite your needs.
-These variables are automatically included when you execute any make commands.
+The instructions below assumes you are using the default values in `.env` file.
+
+-----
 
 ### MariaDB Service
 
@@ -34,9 +35,9 @@ password  = rootpass
 port      = 3306
 ```
 
-To access `PhpMyAdmin`, visit: https://localhost:8080
+`PhpMyAdmin` is automatically started and can be accessed via [http://localhost:8080](http://localhost:8080) by default.
 
-PhpMyAdmin is automatically started and can be accessed via [http://localhost:8080](http://localhost:8080) by default.
+-----
 
 ### Postgres Service
 
@@ -47,11 +48,11 @@ The default connection settings are:
 ```
 host      = localhost
 username  = postgres
-password  = postgrespass
+password  = postgres
 port      = 5432
 ```
 
-To access `pgadmin4`, visit https://localhost:8081
+To manage your postgres server using `pgadmin4` visit http://localhost:8081
 
 The default email/password for pgadmin4 is:
 
@@ -60,14 +61,16 @@ Email: admin@domain.com
 Password: admin
 ```
 
-Then select the pre-defined server `Servers > Local Server`. When a prompt appears to enter your password, type: `postgrespass`
+Then select the pre-defined server `Servers > Local Server`. When a prompt appears to enter your postgres user password, type: `postgres`
 
 This will automatically connect you to the running docker postgres server.
+
+-----
 
 ## Docker Status
 
 To list all running docker containers:
 
 ```
-make status
+make status # alis for docker container list
 ```
