@@ -5,8 +5,7 @@
       "Group": "Servers",
       "Port": 5432,
       "Username": "postgres",
-      "Password": "postgrespass",
-      "Host": "pg-server",
+      "Host": "postgres-server",
       "SSLMode": "prefer",
       "MaintenanceDB": "postgres"
     }

@@ -27,7 +27,7 @@ start_postgres:
 		-v pgdata:/var/lib/postgresql/data \
 		postgres:latest
 	sudo chown -R 5050:5050 ./pgadmin4 && \
-		docker run --rm -d --name $(PGADMIN_CONTAINER) -p $(PGADMIN_PORT):$(PGADMIN_PORT) --link $(PG_CONTAINER):pg-server \
+		docker run --rm -d --name $(PGADMIN_CONTAINER) -p $(PGADMIN_PORT):$(PGADMIN_PORT) --link $(PG_CONTAINER):$(PG_CONTAINER) \
 		-e 'PGADMIN_LISTEN_PORT=$(PGADMIN_PORT)' \
 		-e 'PGADMIN_DEFAULT_EMAIL=$(PGADMIN_EMAIL)' \
     -e 'PGADMIN_DEFAULT_PASSWORD=$(PGADMIN_PASS)' \
