@@ -42,5 +42,11 @@ stop_postgres:
 	docker stop $(PG_CONTAINER)
 	docker stop $(PGADMIN_CONTAINER)
 
+start_mailhog:
+	docker run --rm -d --name mailhog -p 8025:8025 -p 1025:1025 mailhog/mailhog
+
+stop_mailhog:
+	docker stop mailhog
+
 status:
 	docker container ls

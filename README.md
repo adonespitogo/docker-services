@@ -57,8 +57,8 @@ To manage your postgres server using `pgadmin4` visit http://localhost:8081
 The default email/password for pgadmin4 is:
 
 ```
-Email: admin@domain.com
-Password: admin
+Email:      admin@domain.com
+Password:   admin
 ```
 
 Then select the pre-defined server `Servers > Local Server`. When a prompt appears to enter your postgres user password, type: `postgres`
@@ -66,6 +66,14 @@ Then select the pre-defined server `Servers > Local Server`. When a prompt appea
 This will automatically connect you to the running docker postgres server.
 
 -----
+
+### Mailhog
+
+To start `mailhog`, run `start_mailhog`.
+
+To stop, use `stop_mailhog`.
+
+You can view the mailhog web interface at http://localhost:8025
 
 ## Docker Status
 
