@@ -24,7 +24,7 @@ The instructions below assumes you are using the default values in `.env` file.
 
 ### MariaDB Service
 
-To start `mariadb` server, type: `make start_mariadb`. To stop, use `make stop_mariadb`.
+To start `mariadb` server, type: `make start_mariadb`. 
 
 The default connection settings are:
 
@@ -37,11 +37,13 @@ port      = 3306
 
 `PhpMyAdmin` is automatically started and can be accessed via [http://localhost:8080](http://localhost:8080) by default.
 
+To stop mariadb server, type `make stop_mariadb`.
+
 -----
 
 ### Postgres Service
 
-To start `postgres` server, type: `make start_postgres`. To stop, use `make stop_postgres`.
+To start `postgres` server, type: `make start_postgres`. .
 
 The default connection settings are:
 
@@ -65,15 +67,16 @@ Then select the pre-defined server `Servers > Local Server`. When a prompt appea
 
 This will automatically connect you to the running docker postgres server.
 
+To stop the postgresql server, type `make stop_postgres`
 -----
 
 ### Mailhog
 
 To start `mailhog`, run `start_mailhog`.
 
-To stop, use `stop_mailhog`.
-
 You can view the mailhog web interface at http://localhost:8025
+
+To stop, use `stop_mailhog`.
 
 ## Docker Status
 
