@@ -24,7 +24,7 @@ The instructions below assumes you are using the default values in `.env` file.
 
 ### MariaDB Service
 
-To start `mariadb` server, type: `make start_mariadb`. 
+To start `mariadb` server, type: `make start_mariadb` inside the docker-services directory. 
 
 The default connection settings are:
 
