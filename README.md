@@ -73,11 +73,11 @@ To stop the postgresql server, type `make stop_postgres`
 
 ### Mailhog
 
-To start `mailhog`, run `start_mailhog`.
+To start `mailhog`, run `make start_mailhog`.
 
 You can view the mailhog web interface at http://localhost:8025
 
-To stop, use `stop_mailhog`.
+To stop, use `make stop_mailhog`.
 
 ## Docker Status
 
