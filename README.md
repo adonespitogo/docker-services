@@ -68,6 +68,7 @@ Then select the pre-defined server `Servers > Local Server`. When a prompt appea
 This will automatically connect you to the running docker postgres server.
 
 To stop the postgresql server, type `make stop_postgres`
+
 -----
 
 ### Mailhog
