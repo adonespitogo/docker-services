@@ -24,7 +24,11 @@ The instructions below assumes you are using the default values in `.env` file.
 
 ### MariaDB Service
 
-To start `mariadb` server, type: `make start_mariadb` inside the docker-services directory. 
+To start `mariadb` server, type `make start_mariadb` inside the docker-services directory.
+
+```sh
+make start_mariadb
+```
 
 The default connection settings are:
 
@@ -43,7 +47,11 @@ To stop mariadb server, type `make stop_mariadb`.
 
 ### Postgres Service
 
-To start `postgres` server, type: `make start_postgres`. .
+To start `postgres` server, type `make start_postgres` inside the docker-services directory.
+
+```sh
+make start_postgres
+```
 
 The default connection settings are:
 
